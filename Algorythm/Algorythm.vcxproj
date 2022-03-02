@@ -144,6 +144,8 @@
     <ClCompile Include="Q12933.cpp" />
     <ClCompile Include="Q12935.cpp" />
     <ClCompile Include="Q12940.cpp" />
+    <ClCompile Include="Q12947.cpp" />
+    <ClCompile Include="Q12950.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

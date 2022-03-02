@@ -30,5 +30,11 @@
     <ClCompile Include="Q12940.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Q12950.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Q12947.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
