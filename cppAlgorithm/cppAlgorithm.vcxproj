@@ -139,6 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Q12901.cpp" />
+    <ClCompile Include="Q12917.cpp" />
+    <ClCompile Include="Q12919.cpp" />
     <ClCompile Include="Q12921.cpp" />
     <ClCompile Include="Q12922.cpp" />
     <ClCompile Include="Q12906.cpp" />
@@ -153,6 +156,8 @@
     <ClCompile Include="Q12943.cpp" />
     <ClCompile Include="Q12947.cpp" />
     <ClCompile Include="Q12950.cpp" />
+    <ClCompile Include="Q17682.cpp" />
+    <ClCompile Include="Q68644.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
