@@ -1,3 +1,4 @@
+// 프로그래머스 게임프로그래머 데브매치 챌린지 01: 못풀었음(...
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -9,7 +10,6 @@ vector<int> solution(vector<string> p) {
     vector<int> classes = { 10000,20000,50000,100000 };
     vector<int> month31 = { 1, 3, 5, 7, 8, 10, 12 };
     vector<int> month30 = { 4, 6, 9, 11 };
-    vector<string> isclass(365, "bronze");
 
     int i, j, day;
     vector<int> date; vector<int> money;
