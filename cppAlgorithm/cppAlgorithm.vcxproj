@@ -246,6 +246,7 @@
     <ClCompile Include="Q77884.cpp" />
     <ClCompile Include="Q81301.cpp" />
     <ClCompile Include="Q82612.cpp" />
+    <ClCompile Include="Q86051.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
