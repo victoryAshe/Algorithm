@@ -1,8 +1,6 @@
 // 제일 작은 수 제거하기: https://programmers.co.kr/learn/courses/30/lessons/12935
-#include <string>
 #include <vector>
 #include <algorithm>
-
 using namespace std;
 
 vector<int> solution(vector<int> arr) {
