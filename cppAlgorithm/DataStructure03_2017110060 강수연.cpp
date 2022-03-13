@@ -1,4 +1,4 @@
-// 22-1 자료구조 과제 01: 성적 평균 계산 프로그램
+// 22-1 자료구조 과제 03: 성적 평균 계산 프로그램
 #include <iostream>
 #include <random>
 using namespace std;
@@ -36,7 +36,7 @@ int main()
 		{
 			sum = 0;
 			for (k = 0; k < 9; k++) sum += scores[i][j][k];
-			cout << i + 1 << "반의 " << subjects[j] << " 과목 평균: " << sum / 9 << endl;
+			cout << i + 1 << "반의 " << subjects[j] << " 과목 평균: " << (float)sum / 9 << endl;
 			sum2[j] += sum;
 		}
 		

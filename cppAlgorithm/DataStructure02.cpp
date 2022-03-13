@@ -1,27 +1,24 @@
-// 22-1 자료구조 과제 02: 학점 부여 프로그램
+// 22-1 자료구조 과제 02: 성적 계산 프로그램
 #include <iostream>
 using namespace std;
-
+const int Student = 10, Sub = 3;
 int main()
 {
-	int math_scores[20] = {75, 60, 88, 100, 54, 70, 85, 80, 95, 10, 20, 40 , 50, 60, 70, 80, 90, 0, 99, 77};
-	char grades[20];
-	int i, x, size = sizeof(math_scores)/sizeof(int);
-	for (i = 0; i< size; i++)
+	cout << fixed; cout.precision(1);
+	int score[Sub][Student] = { {75, 60, 88, 100, 54, 70, 85, 80, 95, 10},
+		{85, 80, 89, 100, 100, 70, 85, 80, 95, 10},
+		{70, 50, 80, 79, 85, 70, 85, 80, 95, 10} };
+	string names[Sub] = { "국어", "영어", "수학"};
+	int i, j; double answer;
+
+	for (i = 0; i < Sub; i++)
 	{
-		x = math_scores[i];
-		if (x >= 90) grades[i] = 'A';
-		else if (x >= 80) grades[i] = 'B';
-		else if (x >= 70) grades[i] = 'C';
-		else if (x >= 60) grades[i] = 'D';
-		else grades[i] = 'F';
+		answer = 0;
+		for (j = 0; j < Student; j++) answer += score[i][j];
+		answer = (double)answer / Student;
+		cout << names[i] << " 과목의 평균은 " << answer << "입니다." << endl;
 	}
-	
-	for (i = 0; i < size; i++)
-	{
-		cout << math_scores[i] << " " << grades[i];
-		if (i < size - 1) cout << ", ";
-	}
-		
+
+
 	return 0;
 }
