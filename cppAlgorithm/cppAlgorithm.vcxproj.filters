@@ -87,9 +87,6 @@
     <ClCompile Include="Q42586.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CodingTest01.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Q12915.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -175,6 +172,15 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Q43165.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Q42626.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Q42587.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Q42839.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
