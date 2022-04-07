@@ -72,12 +72,6 @@
     <ClCompile Include="Q12917.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DataStructure01.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DataStructre03.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Q42888.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -195,7 +189,7 @@
     <ClCompile Include="DataStructure01_2017110060 강수연.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DataStructure04_2017110060 강수연.cpp">
+    <ClCompile Include="DataStructure04.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Q42747.cpp">
@@ -208,6 +202,18 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Q12973.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Q1844.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure_LinkedList01.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure05.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Q42860.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
