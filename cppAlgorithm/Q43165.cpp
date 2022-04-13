@@ -1,5 +1,5 @@
-// Å¸°Ù³Ñ¹ö: https://programmers.co.kr/learn/courses/30/lessons/43165?language=cpp
-// Àç±Í·Î Ã³¸®
+// íƒ€ê²Ÿë„˜ë²„: https://programmers.co.kr/learn/courses/30/lessons/43165?language=cpp
+// ì¬ê·€ë¡œ ì²˜ë¦¬
 #include <vector>
 using namespace std;
 
@@ -17,7 +17,7 @@ int solution(vector<int> numbers, int target) {
     }
 }
 /*
-* [´Ù¸¥ »ç¶÷ÀÇ Ç®ÀÌ]: DFS(±íÀÌ ¿ì¼± Å½»ö) »ç¿ë -> ÈÎ¾À »¡¸® ¿Ï·áµÈ´Ù.
+* [ë‹¤ë¥¸ ì‚¬ëŒì˜ í’€ì´]: DFS(ê¹Šì´ ìš°ì„  íƒìƒ‰) ì‚¬ìš© -> í›¨ì”¬ ë¹¨ë¦¬ ì™„ë£Œëœë‹¤.
 * 
 #include <vector>
 using namespace std;

@@ -1,4 +1,4 @@
-// ÇÁ¸°ÅÍ: https://programmers.co.kr/learn/courses/30/lessons/42587
+// í”„ë¦°í„°: https://programmers.co.kr/learn/courses/30/lessons/42587
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -25,23 +25,23 @@ int solution(vector<int> pr, int location) {
 }
 /*
 * 
-* [´Ù¸¥ »ç¶÷ Ç®ÀÌ]: Queue »ç¿ë
+* [ë‹¤ë¥¸ ì‚¬ëŒ í’€ì´]: Queue ì‚¬ìš©
 #include <vector>
 #include <queue>
 #include <algorithm>
 using namespace std;
 
 int solution(vector<int> priorities, int location) {
-    queue<int> printer; vector<int> sorted; //printer: queue¿¡ index »ğÀÔ. sorted: Á¤·ÄµÈ °á°ú ÀúÀå¿ë
+    queue<int> printer; vector<int> sorted; //printer: queueì— index ì‚½ì…. sorted: ì •ë ¬ëœ ê²°ê³¼ ì €ì¥ìš©
     for(int i=0; i<priorities.size(); i++) printer.push(i);
     
     while(!printer.empty()) {
         int now_index = printer.front();
         printer.pop();
         if(priorities[now_index] != *max_element(priorities.begin(),priorities.end())) 
-            printer.push(now_index); //¾Æ´Ñ°æ¿ì push
+            printer.push(now_index); //ì•„ë‹Œê²½ìš° push
         else {
-            sorted.push_back(now_index); priorities[now_index] = 0; //¸Â´Â°æ¿ì
+            sorted.push_back(now_index); priorities[now_index] = 0; //ë§ëŠ”ê²½ìš°
         }
     }
     for(int i=0; i<sorted.size(); i++) if(sorted[i] == location) return i+1; 

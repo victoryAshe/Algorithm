@@ -1,4 +1,4 @@
-// 22-1 ÀÚ·á±¸Á¶ °úÁ¦ 04: ÇĞ»ı¼ö¿Í ¼ºÀûÀ» ÀÔ·Â¹Ş´Â ¼ºÀû °è»ê ÇÁ·Î±×·¥
+// 22-1 ìë£Œêµ¬ì¡° ê³¼ì œ 04: í•™ìƒìˆ˜ì™€ ì„±ì ì„ ì…ë ¥ë°›ëŠ” ì„±ì  ê³„ì‚° í”„ë¡œê·¸ë¨
 #include <iostream>
 using namespace std;
 int main()
@@ -7,20 +7,20 @@ int main()
 	
 	int Student, i, sum = 0, *p;
 
-	cout << "ÇĞ»ı ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ";
+	cout << "í•™ìƒ ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ";
 	cin >> Student; 
 	cout << endl;
 
 	p= new int[Student];
 
-	cout << "°¢ ÇĞ»ıÀÇ Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ";
+	cout << "ê° í•™ìƒì˜ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ";
 	for (i = 0; i < Student; i++)
 	{
 		cin >> p[i]; sum += p[i];
 	}
 	cout << endl;
 
-	cout << "ÇĞ»ı " << Student << "¸íÀÇ ¼öÇĞ °ú¸ñ Æò±ÕÀº " << (double)sum / Student << "Á¡ÀÔ´Ï´Ù." <<endl;
+	cout << "í•™ìƒ " << Student << "ëª…ì˜ ìˆ˜í•™ ê³¼ëª© í‰ê· ì€ " << (double)sum / Student << "ì ì…ë‹ˆë‹¤." <<endl;
 
 	return 0;
 }

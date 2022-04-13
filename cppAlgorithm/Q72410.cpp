@@ -1,8 +1,8 @@
-// [2021 Ä«Ä«¿À] ½Å±Ô ¾ÆÀÌµğ ÃßÃµ: https://programmers.co.kr/learn/courses/30/lessons/72410
-// ¹è¿î °Í: [string ³» Æ¯Á¤ chr °Ë»ç] strchr(string target, char find) https://blockdmask.tistory.com/389
-// ¹è¿î °Í: |= ¿¬»ê: ºñÆ® OR ¿¬»ê. ex) 'A'|= 32 -> 'a' (65|=32 = 97)
-// ¹è¿î °Í: regex[^x] : x°¡ ¾Æ´Ñ °Í. 
-// regex·Î Ã³¸®ÇÒ ½Ã ÄÚµå°¡ ´Ü¼øÇØÁöÁö¸¸ Ã³¸®½Ã°£ÀÌ ¿À·¡°É¸®°í(0.11~0.33ms), ¾Æ·¡ÀÇ [´Ù¸¥ »ç¶÷ÀÇ Ç®ÀÌ]·Î Ç®¸é ±²ÀåÈ÷ »¡¸® Ã³¸®µÈ´Ù(0.01ms).
+// [2021 ì¹´ì¹´ì˜¤] ì‹ ê·œ ì•„ì´ë”” ì¶”ì²œ: https://programmers.co.kr/learn/courses/30/lessons/72410
+// ë°°ìš´ ê²ƒ: [string ë‚´ íŠ¹ì • chr ê²€ì‚¬] strchr(string target, char find) https://blockdmask.tistory.com/389
+// ë°°ìš´ ê²ƒ: |= ì—°ì‚°: ë¹„íŠ¸ OR ì—°ì‚°. ex) 'A'|= 32 -> 'a' (65|=32 = 97)
+// ë°°ìš´ ê²ƒ: regex[^x] : xê°€ ì•„ë‹Œ ê²ƒ. 
+// regexë¡œ ì²˜ë¦¬í•  ì‹œ ì½”ë“œê°€ ë‹¨ìˆœí•´ì§€ì§€ë§Œ ì²˜ë¦¬ì‹œê°„ì´ ì˜¤ë˜ê±¸ë¦¬ê³ (0.11~0.33ms), ì•„ë˜ì˜ [ë‹¤ë¥¸ ì‚¬ëŒì˜ í’€ì´]ë¡œ í’€ë©´ êµ‰ì¥íˆ ë¹¨ë¦¬ ì²˜ë¦¬ëœë‹¤(0.01ms).
 #include <string>
 #include <regex>
 using namespace std;
@@ -22,7 +22,7 @@ string solution(string id) {
     return id;
 }
 /*
-* [´Ù¸¥ »ç¶÷ Ç®ÀÌ] 
+* [ë‹¤ë¥¸ ì‚¬ëŒ í’€ì´] 
 #include <bits/stdc++.h>
 using namespace std;
 

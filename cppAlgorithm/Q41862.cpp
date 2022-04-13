@@ -1,4 +1,4 @@
-// Ã¼À°º¹: https://programmers.co.kr/learn/courses/30/lessons/42862
+// ì²´ìœ¡ë³µ: https://programmers.co.kr/learn/courses/30/lessons/42862
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -38,7 +38,7 @@ int solution(int n, vector<int> lost, vector<int> reserve) {
 }
 
 /*
-* [´Ù¸¥ »ç¶÷ Ç®ÀÌ]
+* [ë‹¤ë¥¸ ì‚¬ëŒ í’€ì´]
 * 
 #include <vector>
 

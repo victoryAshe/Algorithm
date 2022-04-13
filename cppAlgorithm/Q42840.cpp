@@ -1,12 +1,12 @@
-// ¸ğÀÇ°í»ç: https://programmers.co.kr/learn/courses/30/lessons/42840
-// ¹è¿î °Í: int they_max = *max_element(they.begin(),they.end());
+// ëª¨ì˜ê³ ì‚¬: https://programmers.co.kr/learn/courses/30/lessons/42840
+// ë°°ìš´ ê²ƒ: int they_max = *max_element(they.begin(),they.end());
 #include <vector>
 #include <algorithm>
 using namespace std;
 
 vector<int> solution(vector<int> answers) {
     vector<int> answer; vector<int> corrects(3, 0); int i;
-    // °¢ ÇĞ»ıÀÇ ¸ÂÀº °³¼ö¸¦ °è»ê
+    // ê° í•™ìƒì˜ ë§ì€ ê°œìˆ˜ë¥¼ ê³„ì‚°
     vector<int> g1 = { 1, 2, 3, 4, 5 };
     vector<int> g2 = { 2, 1, 2, 3, 2, 4, 2, 5 };
     vector<int> g3 = { 3, 3, 1, 1, 2, 2, 4, 4, 5, 5 };
@@ -17,7 +17,7 @@ vector<int> solution(vector<int> answers) {
         if (answers[i] == g3[i % g3.size()]) corrects[2]++;
     }
 
-    // ¸ÂÀº °³¼ö ºñ±³
+    // ë§ì€ ê°œìˆ˜ ë¹„êµ
     int max = *max_element(corrects.begin(), corrects.end());
     for (i = 0; i < 3; i++) if (corrects[i] == max) answer.push_back(i + 1);
 

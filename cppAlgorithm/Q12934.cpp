@@ -1,4 +1,4 @@
-// Á¤¼ö Á¦°ö±Ù ÆÇº°: https://programmers.co.kr/learn/courses/30/lessons/12934?language=cpp
+// ì •ìˆ˜ ì œê³±ê·¼ íŒë³„: https://programmers.co.kr/learn/courses/30/lessons/12934?language=cpp
 #include <cmath>
 using namespace std;
 

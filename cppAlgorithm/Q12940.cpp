@@ -1,5 +1,5 @@
-// ÃÖ´ë°ø¾à¼ö¿Í ÃÖ¼Ò°ø¹è¼ö: https://programmers.co.kr/learn/courses/30/lessons/12940
-// À¯Å¬¸®µå È£Á¦¹ı: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=kmc7468&logNo=221017936040
+// ìµœëŒ€ê³µì•½ìˆ˜ì™€ ìµœì†Œê³µë°°ìˆ˜: https://programmers.co.kr/learn/courses/30/lessons/12940
+// ìœ í´ë¦¬ë“œ í˜¸ì œë²•: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=kmc7468&logNo=221017936040
 #include <string>
 #include <vector>
 
@@ -8,16 +8,16 @@ using namespace std;
 vector<int> solution(int n, int m) {
     vector<int> answer;
     int a = n, b = m, c;
-    while (b != 0) //ÃÖ´ë°ø¾à¼ö(GCD) °ø½Ä
+    while (b != 0) //ìµœëŒ€ê³µì•½ìˆ˜(GCD) ê³µì‹
     {
         c = a % b; a = b; b = c;
     }
     answer.push_back(a);
-    answer.push_back(n * m / a); //ÃÖ¼Ò°ø¹è¼ö(LCM) °ø½Ä
+    answer.push_back(n * m / a); //ìµœì†Œê³µë°°ìˆ˜(LCM) ê³µì‹
     return answer;
 
     /*
-    //´Ù¸¥ »ç¶÷ Ç®ÀÌ: GCD¸¦ Àç±ÍÀÇ Á¶°Ç½ÄÀ¸·Î Ç®ÀÌ
+    //ë‹¤ë¥¸ ì‚¬ëŒ í’€ì´: GCDë¥¼ ì¬ê·€ì˜ ì¡°ê±´ì‹ìœ¼ë¡œ í’€ì´
     
     int Euclidean(int a, int b)
     {

@@ -1,5 +1,5 @@
-// ÃÖ¼ÒÁ÷»ç°¢Çü: https://programmers.co.kr/learn/courses/30/lessons/86491
-// Idea: ¾îÂ÷ÇÇ ÃÖ´ñ°ªÀ» ¹İÈ¯ÇÏ´Â °ÍÀÌ±â ¶§¹®¿¡, ±ä ºÎºĞÀ» ¹«Á¶°Ç °¡·Î·Î Á¤ÇØ ³ĞÀÌÀÇ ÃÖ´ñ°ªÀ» ±¸ÇÑ´Ù.
+// ìµœì†Œì§ì‚¬ê°í˜•: https://programmers.co.kr/learn/courses/30/lessons/86491
+// Idea: ì–´ì°¨í”¼ ìµœëŒ“ê°’ì„ ë°˜í™˜í•˜ëŠ” ê²ƒì´ê¸° ë•Œë¬¸ì—, ê¸´ ë¶€ë¶„ì„ ë¬´ì¡°ê±´ ê°€ë¡œë¡œ ì •í•´ ë„“ì´ì˜ ìµœëŒ“ê°’ì„ êµ¬í•œë‹¤.
 #include <vector>
 #include <algorithm>
 using namespace std;

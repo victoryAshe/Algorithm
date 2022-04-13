@@ -1,4 +1,4 @@
-// ÀÌ»óÇÑ ¹®ÀÚ ¸¸µé±â: https://programmers.co.kr/learn/courses/30/lessons/12930?language=cpp
+// ì´ìƒí•œ ë¬¸ì ë§Œë“¤ê¸°: https://programmers.co.kr/learn/courses/30/lessons/12930?language=cpp
 #include <string>
 #include <vector>
 #include <cctype>

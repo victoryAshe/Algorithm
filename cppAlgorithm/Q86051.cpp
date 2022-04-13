@@ -1,5 +1,5 @@
-// ¾ø´Â ¼ıÀÚ ´õÇÏ±â: https://programmers.co.kr/learn/courses/30/lessons/86051
-// sort¸¦ ¿ì¼± ÇÏ°í ÇØºÃ´Âµ¥ ±×·¯¸é ½Ã°£ ÃÊ°ú°¡ ¶¹´Ù. Á¦ÇÑ»çÇ×ÀÌ 0~9±îÁöÀÎ ¼ıÀÚÀÌ¹Ç·Î ±×³É brute-force ÇØÁÖ¾úÀ½.
+// ì—†ëŠ” ìˆ«ì ë”í•˜ê¸°: https://programmers.co.kr/learn/courses/30/lessons/86051
+// sortë¥¼ ìš°ì„  í•˜ê³  í•´ë´¤ëŠ”ë° ê·¸ëŸ¬ë©´ ì‹œê°„ ì´ˆê³¼ê°€ ë–´ë‹¤. ì œí•œì‚¬í•­ì´ 0~9ê¹Œì§€ì¸ ìˆ«ìì´ë¯€ë¡œ ê·¸ëƒ¥ brute-force í•´ì£¼ì—ˆìŒ.
 #include <vector>
 #include <algorithm>
 using namespace std;

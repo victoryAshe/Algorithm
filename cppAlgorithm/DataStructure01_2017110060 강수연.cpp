@@ -1,4 +1,4 @@
-// 22-1 ÀÚ·á±¸Á¶ °úÁ¦ 01: ¼ºÀû °è»ê ÇÁ·Î±×·¥
+// 22-1 ìë£Œêµ¬ì¡° ê³¼ì œ 01: ì„±ì  ê³„ì‚° í”„ë¡œê·¸ë¨
 #include <iostream>
 using namespace std;
 const int Student = 10, Sub = 1;
@@ -6,7 +6,7 @@ int main()
 { 
 	cout << fixed; cout.precision(1);
 	int score[Sub][Student] = { {75, 60, 88, 100, 54, 70, 85, 80, 95, 10} };
-	string names[Sub] = { "¼öÇĞ" };
+	string names[Sub] = { "ìˆ˜í•™" };
 	int i, j; double answer;
 
 	for (i = 0; i < Sub; i++)
@@ -14,7 +14,7 @@ int main()
 		answer = 0;
 		for (j = 0; j < Student; j++) answer += score[i][j];
 		answer =  (double) answer/ Student;
-		cout << names[i] << " °ú¸ñÀÇ Æò±ÕÀº " << answer << "ÀÔ´Ï´Ù."<< endl;
+		cout << names[i] << " ê³¼ëª©ì˜ í‰ê· ì€ " << answer << "ì…ë‹ˆë‹¤."<< endl;
 	}
 	
 

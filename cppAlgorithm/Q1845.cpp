@@ -1,4 +1,4 @@
-// ÆùÄÏ¸ó: https://programmers.co.kr/learn/courses/30/lessons/1845
+// í°ì¼“ëª¬: https://programmers.co.kr/learn/courses/30/lessons/1845
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -6,14 +6,14 @@ using namespace std;
 int solution(vector<int> nums)
 {
     /*[Idea]
-    * 1. nums.size()/2¸¦ ±¸ÇÔ
-    * 2. nums¿¡ °°Àº ¿ä¼Ò°¡ ÀÖÀ¸¸é »èÁ¦
-    * 3. return nums.size/2 < ³²Àº ¿ä¼Ò¼ö ? nums.size/2 : ³²Àº ¿ä¼Ò ¼ö
+    * 1. nums.size()/2ë¥¼ êµ¬í•¨
+    * 2. numsì— ê°™ì€ ìš”ì†Œê°€ ìˆìœ¼ë©´ ì‚­ì œ
+    * 3. return nums.size/2 < ë‚¨ì€ ìš”ì†Œìˆ˜ ? nums.size/2 : ë‚¨ì€ ìš”ì†Œ ìˆ˜
     */
     int answer = (int) nums.size() / 2, i;
-    //Áßº¹ Á¦°Å
+    //ì¤‘ë³µ ì œê±°
     sort(nums.begin(), nums.end());
     nums.erase(unique(nums.begin(), nums.end()), nums.end());
-    //°ª ¹İÈ¯
+    //ê°’ ë°˜í™˜
     return answer < nums.size() ? answer : nums.size();
 }

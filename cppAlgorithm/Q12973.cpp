@@ -1,5 +1,5 @@
-// Â¦Áö¾î Á¦°ÅÇÏ±â: https://programmers.co.kr/learn/courses/30/lessons/12973
-// ½Ã°£º¹Àâµµ¸¦ ÁÙÀÌ±â À§ÇØ LIFO±¸Á¶ÀÎ stackÀ» ±¸ÇöÇØ »ç¿ë.
+// ì§ì§€ì–´ ì œê±°í•˜ê¸°: https://programmers.co.kr/learn/courses/30/lessons/12973
+// ì‹œê°„ë³µì¡ë„ë¥¼ ì¤„ì´ê¸° ìœ„í•´ LIFOêµ¬ì¡°ì¸ stackì„ êµ¬í˜„í•´ ì‚¬ìš©.
 #include<string>
 #include<vector>
 using namespace std;

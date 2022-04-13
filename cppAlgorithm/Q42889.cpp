@@ -1,8 +1,8 @@
-// [2019 Ä«Ä«¿À] ½ÇÆÐÀ²: https://programmers.co.kr/learn/courses/30/lessons/42889
-// ¹è¿î °Í: pair, make_pair·Î dictionary¿Í À¯»çÇÑ ÇüÅÂÀÇ vectorÇüÀ» ¸¸µé ¼ö ÀÖ´Ù.
-// ¾Æ·¡¿Í °°ÀÌ Å¬·¡½º¸¦ »õ·Î ¸¸µé¾î¼­ compareÇØÁÖ¸é ÄÚµå´Â ´õ ±æ¾îÁöÁö¸¸ pair¸¦ ºñ±³ÇÏ´Â °Íº¸´Ù 2¹è »¡¸® Ã³¸®µÈ´Ù.
-// ÀÌ ¹®Á¦¸¦ Ç® ¶§ ÁÖÀÇÇÒ Á¡: ½ºÅ×ÀÌÁö¿¡ µµ´ÞÇÑ À¯Àú°¡ ¾ø´Â °æ¿ì ÇØ´ç ½ºÅ×ÀÌÁöÀÇ ½ÇÆÐÀ²Àº 0À¸·Î Á¤ÀÇÇÑ´Ù´Â Á¡.
-//                            ¸¸¾à ½ÇÆÐÀ²ÀÌ °°Àº ½ºÅ×ÀÌÁö°¡ ÀÖ´Ù¸é, ÀÛÀº ¹øÈ£ÀÇ ½ºÅ×ÀÌÁö°¡ ¸ÕÀú ¿Àµµ·Ï ÇÑ´Ù´Â Á¡.
+// [2019 ì¹´ì¹´ì˜¤] ì‹¤íŒ¨ìœ¨: https://programmers.co.kr/learn/courses/30/lessons/42889
+// ë°°ìš´ ê²ƒ: pair, make_pairë¡œ dictionaryì™€ ìœ ì‚¬í•œ í˜•íƒœì˜ vectorí˜•ì„ ë§Œë“¤ ìˆ˜ ìžˆë‹¤.
+// ì•„ëž˜ì™€ ê°™ì´ í´ëž˜ìŠ¤ë¥¼ ìƒˆë¡œ ë§Œë“¤ì–´ì„œ compareí•´ì£¼ë©´ ì½”ë“œëŠ” ë” ê¸¸ì–´ì§€ì§€ë§Œ pairë¥¼ ë¹„êµí•˜ëŠ” ê²ƒë³´ë‹¤ 2ë°° ë¹¨ë¦¬ ì²˜ë¦¬ëœë‹¤.
+// ì´ ë¬¸ì œë¥¼ í’€ ë•Œ ì£¼ì˜í•  ì : ìŠ¤í…Œì´ì§€ì— ë„ë‹¬í•œ ìœ ì €ê°€ ì—†ëŠ” ê²½ìš° í•´ë‹¹ ìŠ¤í…Œì´ì§€ì˜ ì‹¤íŒ¨ìœ¨ì€ 0ìœ¼ë¡œ ì •ì˜í•œë‹¤ëŠ” ì .
+//                            ë§Œì•½ ì‹¤íŒ¨ìœ¨ì´ ê°™ì€ ìŠ¤í…Œì´ì§€ê°€ ìžˆë‹¤ë©´, ìž‘ì€ ë²ˆí˜¸ì˜ ìŠ¤í…Œì´ì§€ê°€ ë¨¼ì € ì˜¤ë„ë¡ í•œë‹¤ëŠ” ì .
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -38,7 +38,7 @@ vector<int> solution(int N, vector<int> stages) {
 }
 /*
 *
-// pair, make_pair¸¦ ÀÌ¿ëÇÑ Ç®ÀÌ
+// pair, make_pairë¥¼ ì´ìš©í•œ í’€ì´
 
 #include <vector>
 #include <algorithm>

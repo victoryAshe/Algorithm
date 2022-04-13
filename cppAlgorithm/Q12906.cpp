@@ -1,4 +1,4 @@
-//°°Àº ¼ıÀÚ´Â ½È¾î: https://programmers.co.kr/learn/courses/30/lessons/12906
+//ê°™ì€ ìˆ«ìëŠ” ì‹«ì–´: https://programmers.co.kr/learn/courses/30/lessons/12906
 
 #include <vector>
 #include <iostream>

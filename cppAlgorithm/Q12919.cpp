@@ -1,4 +1,4 @@
-// ¼­¿ï¿¡¼­ ±è¼­¹æ Ã£±â: https://programmers.co.kr/learn/courses/30/lessons/12919
+// ì„œìš¸ì—ì„œ ê¹€ì„œë°© ì°¾ê¸°: https://programmers.co.kr/learn/courses/30/lessons/12919
 #include <string>
 #include <vector>
 #include <algorithm> 
@@ -6,5 +6,5 @@ using namespace std;
 
 string solution(vector<string> seoul) {
     int index = distance(seoul.begin(), find(seoul.begin(), seoul.end(), "Kim"));
-    return "±è¼­¹æÀº " + to_string(index) + "¿¡ ÀÖ´Ù";
+    return "ê¹€ì„œë°©ì€ " + to_string(index) + "ì— ìˆë‹¤";
 }

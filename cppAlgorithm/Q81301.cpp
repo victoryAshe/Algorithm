@@ -1,5 +1,5 @@
-// [2021 Ä«Ä«¿À] ¼ıÀÚ ¹®ÀÚ¿­°ú ¿µ´Ü¾î: https://programmers.co.kr/learn/courses/30/lessons/81301?language=cpp
-// ¹è¿î °Í: regx_replace(string s, regex(string target_string), string change_string);
+// [2021 ì¹´ì¹´ì˜¤] ìˆ«ì ë¬¸ìì—´ê³¼ ì˜ë‹¨ì–´: https://programmers.co.kr/learn/courses/30/lessons/81301?language=cpp
+// ë°°ìš´ ê²ƒ: regx_replace(string s, regex(string target_string), string change_string);
 #include <string>
 #include <regex>
 using namespace std;
@@ -7,8 +7,8 @@ using namespace std;
 int solution(string s) {
     /*
     * for(int i = 0; i<s.size(); i++) if (s.substr(i, 4) == "zero") { a += '0'; i += 3; }  ...
-    * À§¿Í °°Àº ¹æ¹ıÀ» »ç¿ëÇÒ °æ¿ì ±²ÀåÈ÷ ºü¸£°Ô Ã³¸®µÇÁö¸¸, ÄÚµå°¡ ´õ·´´Ù!
-    * ¾Æ·¡¿Í °°Àº ¹æ¹ıÀ» »ç¿ëÇÒ °æ¿ì Ã³¸® ¼Óµµ´Â Á¶±İ ´À·ÁÁöÁö¸¸, ÄÚµå°¡ Á¤µ·µÇ¾îÀÖ´Ù.
+    * ìœ„ì™€ ê°™ì€ ë°©ë²•ì„ ì‚¬ìš©í•  ê²½ìš° êµ‰ì¥íˆ ë¹ ë¥´ê²Œ ì²˜ë¦¬ë˜ì§€ë§Œ, ì½”ë“œê°€ ë”ëŸ½ë‹¤!
+    * ì•„ë˜ì™€ ê°™ì€ ë°©ë²•ì„ ì‚¬ìš©í•  ê²½ìš° ì²˜ë¦¬ ì†ë„ëŠ” ì¡°ê¸ˆ ëŠë ¤ì§€ì§€ë§Œ, ì½”ë“œê°€ ì •ëˆë˜ì–´ìˆë‹¤.
     */
 
     int i;

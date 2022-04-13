@@ -1,4 +1,4 @@
-// ¾à¼öÀÇ °³¼ö¿Í µ¡¼À: https://programmers.co.kr/learn/courses/30/lessons/77884?language=cpp
+// ì•½ìˆ˜ì˜ ê°œìˆ˜ì™€ ë§ì…ˆ: https://programmers.co.kr/learn/courses/30/lessons/77884?language=cpp
 using namespace std;
 
 int solution(int left, int right) {

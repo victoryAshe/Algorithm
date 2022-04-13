@@ -1,5 +1,5 @@
-// ¿ÏÁÖÇÏÁö ¸øÇÑ ¼±¼ö: https://programmers.co.kr/learn/courses/30/lessons/42576
-// Ã³À½ºÎÅÍ find¸¦ ½á¼­ °¢°¢ ºñ±³ÇÏ¸é¼­ Ã£´Â °Íº¸´Ù sort·Î Á¤·ÄÇÑ µÚ °°Áö ¾ÊÀ¸¸é returnÇÏ´Â °ÍÀÌ ºü¸£´Ù.
+// ì™„ì£¼í•˜ì§€ ëª»í•œ ì„ ìˆ˜: https://programmers.co.kr/learn/courses/30/lessons/42576
+// ì²˜ìŒë¶€í„° findë¥¼ ì¨ì„œ ê°ê° ë¹„êµí•˜ë©´ì„œ ì°¾ëŠ” ê²ƒë³´ë‹¤ sortë¡œ ì •ë ¬í•œ ë’¤ ê°™ì§€ ì•Šìœ¼ë©´ returní•˜ëŠ” ê²ƒì´ ë¹ ë¥´ë‹¤.
 #include <string>
 #include <vector>
 #include <algorithm>

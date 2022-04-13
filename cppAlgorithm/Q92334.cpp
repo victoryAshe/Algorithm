@@ -1,4 +1,4 @@
-// [2022 Ä«Ä«¿À] ½Å°í °á°ú ¹Ş±â: https://programmers.co.kr/learn/courses/30/lessons/92334
+// [2022 ì¹´ì¹´ì˜¤] ì‹ ê³  ê²°ê³¼ ë°›ê¸°: https://programmers.co.kr/learn/courses/30/lessons/92334
 #include <string>
 #include <vector>
 #include <map>
@@ -12,7 +12,7 @@ vector<int> solution(vector<string> id, vector<string> report, int k) {
     map<string, vector<string>>::iterator p; string reporter, target = "", targetA;
     vector<string> stopped;
     sort(report.begin(), report.end());
-    // ½Å°í ¸ñ·Ï ÀÛ¼º
+    // ì‹ ê³  ëª©ë¡ ì‘ì„±
     for (string x : report)
     {
         stringstream ss(x); ss >> reporter; ss >> targetA;
@@ -30,7 +30,7 @@ vector<int> solution(vector<string> id, vector<string> report, int k) {
         }
     }
 
-    // ID ´ç ½Å°í ¼ö Àû¸³
+    // ID ë‹¹ ì‹ ê³  ìˆ˜ ì ë¦½
     for (string x : id)
     {
         K = 0;

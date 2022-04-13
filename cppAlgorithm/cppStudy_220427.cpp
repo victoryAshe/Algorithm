@@ -4,11 +4,11 @@ using namespace std;
 void main() {
 	char* p;
 	int num;
-	cout << "ÇÒ´çÇÒ Á¤¼öÀÇ °³¼ö: ";
+	cout << "í• ë‹¹í•  ì •ìˆ˜ì˜ ê°œìˆ˜: ";
 	cin >> num;
 	cout << endl;
 	p = new char[num];
-	cout << "ÇÒ´çÇÒ Á¤¼ö " << num << "°³: ";
+	cout << "í• ë‹¹í•  ì •ìˆ˜ " << num << "ê°œ: ";
 	for (int i = 0; i < num; i++) cin >> p[i];
 	cout << endl;
 	for (int i = 0; i < num; i++) cout << p[i] << " ";

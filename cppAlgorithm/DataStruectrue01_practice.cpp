@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
-#define ST_NUM 20				// C ½ºÅ¸ÀÏ
-const int StudentNumber = 20;	// C++ ½ºÅ¸ÀÏ
+#define ST_NUM 20				// C ìŠ¤íƒ€ì¼
+const int StudentNumber = 20;	// C++ ìŠ¤íƒ€ì¼
 void main()
 {
-	// TODO: ST_NUM ¸íÀÇ ¼ºÀû Æò±Õ ±¸ÇÏ±â
+	// TODO: ST_NUM ëª…ì˜ ì„±ì  í‰ê·  êµ¬í•˜ê¸°
 	int scores[ST_NUM];
 	for (int st = 0; st < StudentNumber; st++)
 	{
-		cout << st + 1 << "¹øÂ° ÇĞ»ı ¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä: ";
+		cout << st + 1 << "ë²ˆì§¸ í•™ìƒ ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”: ";
 		cin >> scores[st];
 	}
 	int sum = 0;

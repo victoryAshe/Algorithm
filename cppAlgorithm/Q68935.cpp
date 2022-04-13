@@ -1,4 +1,4 @@
-// 3Áø¹ý µÚÁý±â: https://programmers.co.kr/learn/courses/30/lessons/68935?language=cpp
+// 3ì§„ë²• ë’¤ì§‘ê¸°: https://programmers.co.kr/learn/courses/30/lessons/68935?language=cpp
 #include <string>
 #include <cmath>
 #include <algorithm>
@@ -7,7 +7,7 @@ using namespace std;
 int solution(int n) {
     string a; int i = 1, b;
 
-    //3Áø¹ý ±¸Çö
+    //3ì§„ë²• êµ¬í˜„
     while (n > 0)
     {
         b = n % 3 == 0 ? 0 : n % 3;
@@ -15,10 +15,10 @@ int solution(int n) {
         n = n >= 3 ? n /= 3 : 0;
     }
 
-    //¾ÕµÚ ¹ÝÀü
+    //ì•žë’¤ ë°˜ì „
     reverse(a.begin(), a.end());
 
-    //10Áø¹ý º¯È¯
+    //10ì§„ë²• ë³€í™˜
     b = a.size();
     while (a.size() > 0)
     {

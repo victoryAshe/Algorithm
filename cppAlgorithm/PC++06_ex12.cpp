@@ -4,6 +4,6 @@ using namespace std;
 void main()
 {
 	char s[][10] = { "HIGH", "MIDDLE", "LOW" };
-	cout << *(s[2]+1) << endl;		// -> 'O' (¡ñ *(s[2])´Â s[2]ÀÇ ½ÃÀÛ ÁÖ¼Ò¿¡ ÀÖ´Â LÀ» ¹İÈ¯.)
+	cout << *(s[2]+1) << endl;		// -> 'O' (âˆµ *(s[2])ëŠ” s[2]ì˜ ì‹œì‘ ì£¼ì†Œì— ìˆëŠ” Lì„ ë°˜í™˜.)
 }
 

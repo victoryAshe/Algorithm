@@ -1,4 +1,4 @@
-//¹®ÀÚ¿­ ³» ¸¶À½´ë·Î Á¤·ÄÇÏ±â: https://programmers.co.kr/learn/courses/30/lessons/12915
+//ë¬¸ìì—´ ë‚´ ë§ˆìŒëŒ€ë¡œ ì •ë ¬í•˜ê¸°: https://programmers.co.kr/learn/courses/30/lessons/12915
 #include <string>
 #include <vector>
 #include <algorithm>

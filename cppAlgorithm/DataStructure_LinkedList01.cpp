@@ -1,4 +1,4 @@
-// 22-1 ÀÚ·á±¸Á¶: ¿¬°á¸®½ºÆ® ½Ç½À 220407
+// 22-1 ìë£Œêµ¬ì¡°: ì—°ê²°ë¦¬ìŠ¤íŠ¸ ì‹¤ìŠµ 220407
 
 #include<iostream>
 using namespace std;
@@ -51,20 +51,20 @@ public:
 
 	void insert_node(Node *pre, Node *new_node)
 	{
-		if (head == NULL) head = new_node;	// °ø¹é ¸®½ºÆ®ÀÎ °æ¿ì
-		else if (pre == NULL)				// pre°¡ NULLÀÌ¸é Ã¹¹øÂ° ³ëµå·Î »ğÀÔ
+		if (head == NULL) head = new_node;	// ê³µë°± ë¦¬ìŠ¤íŠ¸ì¸ ê²½ìš°
+		else if (pre == NULL)				// preê°€ NULLì´ë©´ ì²«ë²ˆì§¸ ë…¸ë“œë¡œ ì‚½ì…
 			insert_node_at_front(new_node);
-		else								// pre ´ÙÀ½¿¡ »ğÀÔ
+		else								// pre ë‹¤ìŒì— ì‚½ì…
 		{
 			new_node->link = pre->link;
 			pre->link = new_node;
 		}
 	}
 
-	void insert_node(int value)		// ¼±Çà ³ëµå¸¦ ¸ğ¸£´Â °æ¿ì: ¸Ç µÚ¿¡ »ğÀÔ
+	void insert_node(int value)		// ì„ í–‰ ë…¸ë“œë¥¼ ëª¨ë¥´ëŠ” ê²½ìš°: ë§¨ ë’¤ì— ì‚½ì…
 	{
 		Node* new_node = new Node(value);
-		if (head == NULL) head = new_node;	// °ø¹é ¸®½ºÆ®ÀÎ °æ¿ì
+		if (head == NULL) head = new_node;	// ê³µë°± ë¦¬ìŠ¤íŠ¸ì¸ ê²½ìš°
 		else
 		{
 			Node* temp = head;
@@ -77,17 +77,17 @@ public:
 	{
 		Node* target = head;
 
-		if (head == NULL)				// »èÁ¦ÇÒ °ÍÀÌ ¾øÀ½
+		if (head == NULL)				// ì‚­ì œí•  ê²ƒì´ ì—†ìŒ
 		{
-			cout << "ºó ¸®½ºÆ®´Â Áö¿ï ¼ö ¾ø½À´Ï´Ù." << endl;
+			cout << "ë¹ˆ ë¦¬ìŠ¤íŠ¸ëŠ” ì§€ìš¸ ìˆ˜ ì—†ìŠµë‹ˆë‹¤." << endl;
 			return;		
 		}
-		else if (head->data == key)		// »èÁ¦ÇÒ ³ëµå°¡ Ã¹ ³ëµåÀÎ °æ¿ì
+		else if (head->data == key)		// ì‚­ì œí•  ë…¸ë“œê°€ ì²« ë…¸ë“œì¸ ê²½ìš°
 		{
 			head = head->link;
 			return;
 		}
-		else							// ³ª¸ÓÁö °æ¿ì
+		else							// ë‚˜ë¨¸ì§€ ê²½ìš°
 		{
 			while (target->link)
 			{
@@ -99,7 +99,7 @@ public:
 				target = target->link;
 			}
 		}
-		cout << "ÀÔ·ÂÇÑ °ªÀÌ ÇØ´ç ¿¬°á ¸®½ºÆ®¿¡ ¾ø½À´Ï´Ù." << endl;
+		cout << "ì…ë ¥í•œ ê°’ì´ í•´ë‹¹ ì—°ê²° ë¦¬ìŠ¤íŠ¸ì— ì—†ìŠµë‹ˆë‹¤." << endl;
 
 	}
 
@@ -120,33 +120,33 @@ int main()
 {
 	LinkedList linkedList = LinkedList();
 	
-	cout << "[¿¬°á ¸®½ºÆ® »ı¼º]" << endl;
+	cout << "[ì—°ê²° ë¦¬ìŠ¤íŠ¸ ìƒì„±]" << endl;
 	Node* p1 = new Node(11, new Node(12));
 	linkedList.head = p1;
 
 	linkedList.traverse();
 	cout << endl;
 
-	cout << "[³ëµå »ğÀÔ: Áß°£]" << endl;
+	cout << "[ë…¸ë“œ ì‚½ì…: ì¤‘ê°„]" << endl;
 	Node* p3 = new Node(13);
 	linkedList.insert_node(p1, p3);
 	linkedList.traverse();
 	cout << endl;
 
-	cout << "[³ëµå »ğÀÔ: ¸Ç µÚ]" << endl;
+	cout << "[ë…¸ë“œ ì‚½ì…: ë§¨ ë’¤]" << endl;
 	linkedList.insert_node(14);
 	linkedList.traverse();
 	cout << endl;	
 	
-	cout << "[³ëµå »ğÀÔ: ¸Ç ¾Õ]" << endl;
+	cout << "[ë…¸ë“œ ì‚½ì…: ë§¨ ì•]" << endl;
 	Node* p5 = new Node(15);
 	linkedList.insert_node_at_front(p5);
 	linkedList.traverse();
 	cout << endl;
 
-	cout << "[³ëµå »èÁ¦]" << endl;
+	cout << "[ë…¸ë“œ ì‚­ì œ]" << endl;
 	int data;
-	cout << "¿¬°á ¸®½ºÆ®¿¡¼­ »èÁ¦ÇÒ µ¥ÀÌÅÍ: ";
+	cout << "ì—°ê²° ë¦¬ìŠ¤íŠ¸ì—ì„œ ì‚­ì œí•  ë°ì´í„°: ";
 	cin >> data;
 	linkedList.remove_node(data);
 	linkedList.traverse();

@@ -1,4 +1,4 @@
-//¹®ÀÚ¿­ ³» p¿Í yÀÇ °³¼ö: https://programmers.co.kr/learn/courses/30/lessons/12916
+//ë¬¸ìì—´ ë‚´ pì™€ yì˜ ê°œìˆ˜: https://programmers.co.kr/learn/courses/30/lessons/12916
 
 #include <string>
 #include <iostream>

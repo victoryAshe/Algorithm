@@ -1,4 +1,4 @@
-// °ÔÀÓ ¸Ê ÃÖ´Ü°Å¸®: https://programmers.co.kr/learn/courses/30/lessons/1844
+// ê²Œì„ ë§µ ìµœë‹¨ê±°ë¦¬: https://programmers.co.kr/learn/courses/30/lessons/1844
 #include<vector>
 using namespace std;
 
@@ -8,7 +8,7 @@ int solution(vector<vector<int> > maps)
     if (maps[maps.size() - 1][maps[0].size() - 2] == 0
         && maps[maps.size() - 2][maps[0].size() - 1] == 0) return -1;
 
-    int x = 0, y = 0;   //Ä³¸¯ÅÍÀÇ ÁÂÇ¥
+    int x = 0, y = 0;   //ìºë¦­í„°ì˜ ì¢Œí‘œ
     while (x < maps.size() - 1 && y < maps[0].size() - 1)
     {
         if (maps[x + 1][y] == 1) x++;

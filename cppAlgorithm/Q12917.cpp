@@ -1,4 +1,4 @@
-// ¹®ÀÚ¿­ ³»¸²Â÷¼øÀ¸·Î ¹èÄ¡ÇÏ±â: https://programmers.co.kr/learn/courses/30/lessons/12917?language=cpp
+// ë¬¸ìì—´ ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ë°°ì¹˜í•˜ê¸°: https://programmers.co.kr/learn/courses/30/lessons/12917?language=cpp
 #include <string>
 #include <algorithm>
 using namespace std;

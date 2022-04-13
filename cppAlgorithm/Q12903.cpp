@@ -1,4 +1,4 @@
-// °¡¿îµ¥ ±ÛÀÚ °¡Á®¿À±â: https://programmers.co.kr/learn/courses/30/lessons/12903?language=cpp
+// ê°€ìš´ë° ê¸€ì ê°€ì ¸ì˜¤ê¸°: https://programmers.co.kr/learn/courses/30/lessons/12903?language=cpp
 #include <string>
 using namespace std;
 

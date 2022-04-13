@@ -1,11 +1,11 @@
-// ÀüÈ­¹øÈ£ ¸ñ·Ï: https://programmers.co.kr/learn/courses/30/lessons/42577
+// ì „í™”ë²ˆí˜¸ ëª©ë¡: https://programmers.co.kr/learn/courses/30/lessons/42577
 #include <string>
 #include <vector>
 #include <algorithm>
 using namespace std;
 
 bool solution(vector<string> pb) {
-    // °°Àº Á¢µÎ ¹øÈ£·Î ½ÃÀÛÇÒ °æ¿ì sort¸¦ ÇÏ¸é ¹Ù·Î µÚ¿¡ ¿À±â ¶§¹®¿¡, sort¸¦ ÇØÁÖ¸é ¹İº¹¹®À» ÇÏ³ª¸¸ ½áµµ µÈ´Ù!
+    // ê°™ì€ ì ‘ë‘ ë²ˆí˜¸ë¡œ ì‹œì‘í•  ê²½ìš° sortë¥¼ í•˜ë©´ ë°”ë¡œ ë’¤ì— ì˜¤ê¸° ë•Œë¬¸ì—, sortë¥¼ í•´ì£¼ë©´ ë°˜ë³µë¬¸ì„ í•˜ë‚˜ë§Œ ì¨ë„ ëœë‹¤!
     sort(pb.begin(), pb.end());
 
     int i;

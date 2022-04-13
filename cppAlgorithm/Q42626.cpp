@@ -1,5 +1,5 @@
-// ´õ ¸Ê°Ô: https://programmers.co.kr/learn/courses/30/lessons/42626\
-// ¿ì¼±¼øÀ§ Å¥: https://breakcoding.tistory.com/123
+// ë” ë§µê²Œ: https://programmers.co.kr/learn/courses/30/lessons/42626\
+// ìš°ì„ ìˆœìœ„ í: https://breakcoding.tistory.com/123
 #include <vector>
 #include <queue>
 using namespace std;
@@ -7,7 +7,7 @@ using namespace std;
 int solution(vector<int> scoville, int K)
 {
     int answer = 0, first, second;
-    //¿ì¼± ¼øÀ§ Å¥ »ı¼º
+    //ìš°ì„  ìˆœìœ„ í ìƒì„±
     priority_queue<int, vector<int>, greater<int> > p(scoville.begin(), scoville.end());
 
     while (p.size() > 1 && p.top() < K)
@@ -25,7 +25,7 @@ int solution(vector<int> scoville, int K)
 
 
 /*
-// Àç±Í¸¦ ÀÌ¿ëÇÑ ¹æ¹ı -> Á¤È®¼ºÀº Åë°úÇÏÁö¸¸ È¿À²¼º¿¡¼­´Â ÀüºÎ ½ÇÆĞÇÔ
+// ì¬ê·€ë¥¼ ì´ìš©í•œ ë°©ë²• -> ì •í™•ì„±ì€ í†µê³¼í•˜ì§€ë§Œ íš¨ìœ¨ì„±ì—ì„œëŠ” ì „ë¶€ ì‹¤íŒ¨í•¨
 #include <vector>
 #include <algorithm>
 using namespace std;

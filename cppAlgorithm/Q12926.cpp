@@ -1,4 +1,4 @@
-// ½ÃÀú ¾ÏÈ£: https://programmers.co.kr/learn/courses/30/lessons/12926
+// ì‹œì € ì•”í˜¸: https://programmers.co.kr/learn/courses/30/lessons/12926
 #include <string>
 #include <cctype>
 using namespace std;

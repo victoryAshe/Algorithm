@@ -1,4 +1,4 @@
-// ¿ÀÇÂÃ¤ÆÃ¹æ: https://programmers.co.kr/learn/courses/30/lessons/42888
+// ì˜¤í”ˆì±„íŒ…ë°©: https://programmers.co.kr/learn/courses/30/lessons/42888
 #include <string>
 #include <vector>
 #include <sstream>
@@ -9,14 +9,14 @@ vector<string> solution(vector<string> record) {
     vector<string> answer;
     string commands[3] = { "Enter", "Leave", "Change" };
 
-    //id, nameÀÇ dictionary
+    //id, nameì˜ dictionary
     map<string, string> idMap;
     map<string, string>::iterator p;
 
-    //record¿¡¼­ Àß¶ó ³Ö¾îÁÙ commend, uid, name
+    //recordì—ì„œ ì˜ë¼ ë„£ì–´ì¤„ commend, uid, name
     string command; string uid; string name;
 
-    //°¢ record¿¡ ´ëÇØ id:nameÀÇ dictionary ±¸¼º
+    //ê° recordì— ëŒ€í•´ id:nameì˜ dictionary êµ¬ì„±
     for (string a : record)
     {
         stringstream ss(a); ss >> command; ss >> uid;
@@ -27,12 +27,12 @@ vector<string> solution(vector<string> record) {
         }
     }
 
-    //°¢ recordÀÇ Ã³¸®
+    //ê° recordì˜ ì²˜ë¦¬
     for (string a : record)
     {
         stringstream ss(a); ss >> command; ss >> uid;
-        if (command == commands[0]) answer.push_back(idMap[uid] + "´ÔÀÌ µé¾î¿Ô½À´Ï´Ù.");
-        else if (command == commands[1]) answer.push_back(idMap[uid] + "´ÔÀÌ ³ª°¬½À´Ï´Ù.");
+        if (command == commands[0]) answer.push_back(idMap[uid] + "ë‹˜ì´ ë“¤ì–´ì™”ìŠµë‹ˆë‹¤.");
+        else if (command == commands[1]) answer.push_back(idMap[uid] + "ë‹˜ì´ ë‚˜ê°”ìŠµë‹ˆë‹¤.");
     }
 
     return answer;

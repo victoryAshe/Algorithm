@@ -1,19 +1,19 @@
-// [2018 Ä«Ä«¿À] ´ÙÆ®°ÔÀÓ: https://programmers.co.kr/learn/courses/30/lessons/17682
+// [2018 ì¹´ì¹´ì˜¤] ë‹¤íŠ¸ê²Œì„: https://programmers.co.kr/learn/courses/30/lessons/17682
 #include <string>
 #include <regex>
 #include <vector>
 using namespace std;
 
 int solution(string dartResult) {
-    //Á¤±ÔÇ¥Çö½Ä ¸¸µé±â
+    //ì •ê·œí‘œí˜„ì‹ ë§Œë“¤ê¸°
     regex r("([0-9]{1,2})([SDT]{1})([\x23\x2A]?)");
     regex r1("[0-9]{1,2}"); regex r2("[SDT]{1}");
 
-    //È¸Â÷º° Á¡¼ö¿Í ¿É¼ÇÀ» ´ãÀ» º¤ÅÍ
+    //íšŒì°¨ë³„ ì ìˆ˜ì™€ ì˜µì…˜ì„ ë‹´ì„ ë²¡í„°
     vector<int> scores(3);
     vector<string> options(3);
 
-    //Á¤±ÔÇ¥Çö½Ä¿¡ µû¸¥ ºĞ¸®
+    //ì •ê·œí‘œí˜„ì‹ì— ë”°ë¥¸ ë¶„ë¦¬
     sregex_iterator itr; int i = 0;
     auto begin = sregex_iterator(dartResult.begin(), dartResult.end(), r);
     auto end = sregex_iterator();
@@ -31,7 +31,7 @@ int solution(string dartResult) {
         i++;
     }
 
-    //¿É¼Ç¿¡ µû¸¥ °è»ê
+    //ì˜µì…˜ì— ë”°ë¥¸ ê³„ì‚°
     for (i = 0; i < options.size(); i++)
     {
         if (options[i] == "*")

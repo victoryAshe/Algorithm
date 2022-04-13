@@ -1,30 +1,30 @@
-// [2019 Ä«Ä«¿À °Ü¿ï ÀÎÅÏ½Ê] Å©·¹ÀÎ ÀÎÇü»Ì±â °ÔÀÓ: https://programmers.co.kr/learn/courses/30/lessons/64061
+// [2019 ì¹´ì¹´ì˜¤ ê²¨ìš¸ ì¸í„´ì‹­] í¬ë ˆì¸ ì¸í˜•ë½‘ê¸° ê²Œì„: https://programmers.co.kr/learn/courses/30/lessons/64061
 #include <vector>
 using namespace std;
 
 int solution(vector<vector<int>> board, vector<int> moves) {
     /*
     * [Idea]
-    * board´Â 2Â÷¿ø int º¤ÅÍ, move´Â 1Â÷¿ø int º¤ÅÍ
-    * ÀÎÇü»Ì±â: 1Â÷ idx°¡ ³ôÀÌ ÀÖ´Â °ÍÀÇ 2Â÷ idx(move[idx]-1)¸¦ ²¨³» basket¿¡ ³Ö°í ÇØ´ç idx¸¦ 0À¸·Î ¹Ù²Ş
-    * basket: 1Â÷¿ø int º¤ÅÍ
-    * ÀÎÇü ÅÍÁö±â: basket¿¡ ÀÎÇü(int y)À» ³Ö°íÀÚ ÇÒ¶§ 
-    *              if basketÀÇ ¸¶Áö¸· idxÀÇ ¼ıÀÚ°¡ y¿Í °°À¸¸é: ÇØ´ç ¼ıÀÚ¸¦ eraseÇÏ°í answer+=2
+    * boardëŠ” 2ì°¨ì› int ë²¡í„°, moveëŠ” 1ì°¨ì› int ë²¡í„°
+    * ì¸í˜•ë½‘ê¸°: 1ì°¨ idxê°€ ë†’ì´ ìˆëŠ” ê²ƒì˜ 2ì°¨ idx(move[idx]-1)ë¥¼ êº¼ë‚´ basketì— ë„£ê³  í•´ë‹¹ idxë¥¼ 0ìœ¼ë¡œ ë°”ê¿ˆ
+    * basket: 1ì°¨ì› int ë²¡í„°
+    * ì¸í˜• í„°ì§€ê¸°: basketì— ì¸í˜•(int y)ì„ ë„£ê³ ì í• ë•Œ 
+    *              if basketì˜ ë§ˆì§€ë§‰ idxì˜ ìˆ«ìê°€ yì™€ ê°™ìœ¼ë©´: í•´ë‹¹ ìˆ«ìë¥¼ eraseí•˜ê³  answer+=2
     *              else : basket.push_back(y)
     */
     vector<int> basket = { 0 }; int answer = 0;
     int i, y;
-    // ÀÎÇü»Ì±â
+    // ì¸í˜•ë½‘ê¸°
     for (int x : moves)
     {
         y = 0;
-        //ÀÎÇü y = x-1¹øÂ° columnÀÇ 0ÀÌ ¾Æ´Ñ Ã¹ int <- row¸¶´Ù °Ë»ç
+        //ì¸í˜• y = x-1ë²ˆì§¸ columnì˜ 0ì´ ì•„ë‹Œ ì²« int <- rowë§ˆë‹¤ ê²€ì‚¬
         for (i = 0; i < board.size(); i++) if (board[i][x - 1] != 0)
         {
             y = board[i][x - 1]; board[i][x - 1] = 0;
             break;
         }
-        // basket¿¡ ³Ö±â
+        // basketì— ë„£ê¸°
         if (basket[basket.size() - 1] == y && y != 0)
         {
             if (basket.size() == 1) basket[0] = 0;

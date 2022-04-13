@@ -1,4 +1,4 @@
-// ³ª¸ÓÁö°¡ 1ÀÌ µÇ´Â ¼ö Ã£±â: https://programmers.co.kr/learn/courses/30/lessons/87389
+// ë‚˜ë¨¸ì§€ê°€ 1ì´ ë˜ëŠ” ìˆ˜ ì°¾ê¸°: https://programmers.co.kr/learn/courses/30/lessons/87389
 using namespace std;
 
 int solution(int n) {

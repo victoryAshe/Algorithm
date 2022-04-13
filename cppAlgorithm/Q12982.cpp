@@ -1,11 +1,11 @@
-// ¿¹»ê: https://programmers.co.kr/learn/courses/30/lessons/12982
+// ì˜ˆì‚°: https://programmers.co.kr/learn/courses/30/lessons/12982
 #include <vector>
 #include <algorithm>
 using namespace std;
 
 int solution(vector<int> d, int budget) {
     int added = 0, i;
-    // dÀÇ ¸ðµç ¼ýÀÚ ÇÕÀ» ±¸ÇÏ°í budget ÀÌÇÏÀÎÁö ºñ±³ÇÏ¿© ÇÕÇÑ °³¼öÀÇ ÃÖ´ñ°ªÀ» return
+    // dì˜ ëª¨ë“  ìˆ«ìž í•©ì„ êµ¬í•˜ê³  budget ì´í•˜ì¸ì§€ ë¹„êµí•˜ì—¬ í•©í•œ ê°œìˆ˜ì˜ ìµœëŒ“ê°’ì„ return
     sort(d.begin(), d.end());
     for (int x : d) added += x;
     for (i = d.size(); i > 0; i--)

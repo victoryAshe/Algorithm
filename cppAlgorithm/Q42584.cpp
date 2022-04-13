@@ -1,5 +1,5 @@
-// ÁÖ½Ä °¡°İ: https://programmers.co.kr/learn/courses/30/lessons/42584#
-// ¾ÆÁ÷ ¸ø Ç®¾úÀ½
+// ì£¼ì‹ ê°€ê²©: https://programmers.co.kr/learn/courses/30/lessons/42584#
+// ì•„ì§ ëª» í’€ì—ˆìŒ
 #include <vector>
 #include <algorithm>
 using namespace std;

@@ -7,53 +7,53 @@ int main()
 	string prob = "approximately";
 	int length = prob.length();
 	int tries = 0, maxnum = 0; 
-	string answer(length, '-');		// '-'·Î ÃÊ±âÈ­
+	string answer(length, '-');		// '-'ë¡œ ì´ˆê¸°í™”
 
-	cout << "ÃÖ´ë ½Ãµµ È½¼ö: ";
+	cout << "ìµœëŒ€ ì‹œë„ íšŸìˆ˜: ";
 	cin >> maxnum;
 	cout << endl;
 
-	cout << "ÇöÀç »óÅÂ: " << answer << endl;
+	cout << "í˜„ì¬ ìƒíƒœ: " << answer << endl;
 	while (tries < maxnum && answer != prob)
 	{
 		cout << endl;
 		char c;
-		cout << "±ÛÀÚ¸¦ ÃßÃøÇÏ½Ã¿À: ";
+		cout << "ê¸€ìë¥¼ ì¶”ì¸¡í•˜ì‹œì˜¤: ";
 		cin >> c;
 
-		//string :: npos´Â -1 °ªÀÇ »ó¼ö -> find() ÇÔ¼ö¿¡¼­ ¸ø Ã£Àº °æ¿ì return npos
+		//string :: nposëŠ” -1 ê°’ì˜ ìƒìˆ˜ -> find() í•¨ìˆ˜ì—ì„œ ëª» ì°¾ì€ ê²½ìš° return npos
 		if(answer.find(c) != string::npos)			
 		{
-			cout << "Àü°ú µ¿ÀÏÇÑ ±ÛÀÚÀÔ´Ï´Ù. "<<endl;
+			cout << "ì „ê³¼ ë™ì¼í•œ ê¸€ìì…ë‹ˆë‹¤. "<<endl;
 			continue;
 		}
 		int pos = prob.find(c);
 		if (pos == string::npos) 
 		{
-			cout << "ÃßÃøÇÑ ±ÛÀÚ°¡ ¾ø½À´Ï´Ù." << endl;
+			cout << "ì¶”ì¸¡í•œ ê¸€ìê°€ ì—†ìŠµë‹ˆë‹¤." << endl;
 			tries++;
 			continue;
 		}
 		else 
 		{
 			answer[pos] = c;
-			pos = prob.find(c, pos + 1);   //°°Àº ±ÛÀÚ°¡ ¶Ç ÀÖÀ¸¸é ¹İº¹ÀûÀ¸·Î Ã£±â
+			pos = prob.find(c, pos + 1);   //ê°™ì€ ê¸€ìê°€ ë˜ ìˆìœ¼ë©´ ë°˜ë³µì ìœ¼ë¡œ ì°¾ê¸°
 			while (pos != string::npos)
 			{
 				answer[pos] = c;
 				pos = prob.find(c, pos + 1);
 			}
 		}
-		cout << "ÇöÀç »óÅÂ: " << answer << endl;
+		cout << "í˜„ì¬ ìƒíƒœ: " << answer << endl;
 		if (answer == prob)
 		{
-			cout << "¸Â¾Ò½À´Ï´Ù!" << endl;
+			cout << "ë§ì•˜ìŠµë‹ˆë‹¤!" << endl;
 			break;
 		}
 	}
 	if(tries >= maxnum)
 	{
-		cout << "Æ²·È½À´Ï´Ù. Á¤´äÀº [" << prob << "] ÀÔ´Ï´Ù." << endl;
+		cout << "í‹€ë ¸ìŠµë‹ˆë‹¤. ì •ë‹µì€ [" << prob << "] ì…ë‹ˆë‹¤." << endl;
 	}
 
 	return 0;

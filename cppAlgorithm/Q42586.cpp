@@ -1,4 +1,4 @@
-// ±‚¥… ∞≥πﬂ: https://programmers.co.kr/learn/courses/30/lessons/42586
+// Í∏∞Îä• Í∞úÎ∞ú: https://programmers.co.kr/learn/courses/30/lessons/42586
 #include <string>
 #include <vector>
 using namespace std;
@@ -11,7 +11,7 @@ vector<int> solution(vector<int> p, vector<int> s) {
         for (i = 0; i < p.size(); i++) p[i] += s[i];
 
         n = 0;
-        // TODO: progress∞° 100¿ÃªÛ¿Œ ∞ÕµÈ¿ª ∞ÀªÁ«ÿº≠ ªË¡¶, ±◊ ∞≥ºˆ∏¶ answerø° push_back
+        // TODO: progressÍ∞Ä 100Ïù¥ÏÉÅÏù∏ Í≤ÉÎì§ÏùÑ Í≤ÄÏÇ¨Ìï¥ÏÑú ÏÇ≠Ï†ú, Í∑∏ Í∞úÏàòÎ•º answerÏóê push_back
         if (p[0] >= 100)
         {
             n++;
@@ -34,7 +34,7 @@ vector<int> solution(vector<int> p, vector<int> s) {
 }
 
 /*
-* ¥Ÿ∏• «Æ¿Ã
+* Îã§Î•∏ ÌíÄÏù¥
 * 
 #include <string>
 #include <vector>

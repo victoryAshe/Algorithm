@@ -1,4 +1,4 @@
-// ºÎÁ·ÇÑ ±Ý¾× °è»êÇÏ±â: https://programmers.co.kr/learn/courses/30/lessons/82612
+// ë¶€ì¡±í•œ ê¸ˆì•¡ ê³„ì‚°í•˜ê¸°: https://programmers.co.kr/learn/courses/30/lessons/82612
 using namespace std;
 
 long long solution(int price, int money, int count)

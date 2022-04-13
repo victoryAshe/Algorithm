@@ -1,4 +1,4 @@
-// [Ä«Ä«¿À 2018 1Â÷] ºñ¹ĞÁöµµ: https://programmers.co.kr/learn/courses/30/lessons/17681
+// [ì¹´ì¹´ì˜¤ 2018 1ì°¨] ë¹„ë°€ì§€ë„: https://programmers.co.kr/learn/courses/30/lessons/17681
 #include <string>
 #include <vector>
 #include <bitset>

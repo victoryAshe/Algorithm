@@ -1,5 +1,5 @@
-// Á¤¼ö ³»¸²Â÷¼øÀ¸·Î ¹èÄ¡ÇÏ±â: https://programmers.co.kr/learn/courses/30/lessons/12933?language=cpp
-// »ğÀÔ Á¤·Ä »ç¿ë
+// ì •ìˆ˜ ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ë°°ì¹˜í•˜ê¸°: https://programmers.co.kr/learn/courses/30/lessons/12933?language=cpp
+// ì‚½ì… ì •ë ¬ ì‚¬ìš©
 #include <string>
 #include <vector>
 
@@ -26,7 +26,7 @@ long long solution(long long n) {
     return stoll(a);
 
 	/*
-	* //´Ù¸¥ »ç¶÷ÀÇ Ç®ÀÌ: algorithm: sort »ç¿ë
+	* //ë‹¤ë¥¸ ì‚¬ëŒì˜ í’€ì´: algorithm: sort ì‚¬ìš©
 	* #include <string>
 	*#include <vector>
 	*#include <algorithm>

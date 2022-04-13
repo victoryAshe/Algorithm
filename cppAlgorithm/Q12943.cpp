@@ -1,8 +1,8 @@
-// Äİ¶ó½º ÃßÃø: https://programmers.co.kr/learn/courses/30/lessons/12943?language=cpp
+// ì½œë¼ìŠ¤ ì¶”ì¸¡: https://programmers.co.kr/learn/courses/30/lessons/12943?language=cpp
 using namespace std;
 
 int solution(int num) {
-    if (num == 1) return 0; //ÀÌ Á¶°Ç¹®À» Ãß°¡ÇØµÎÁö ¾ÊÀ¸¸é num==1ÀÏ ¶§ 3ÀÌ returnµÈ´Ù.
+    if (num == 1) return 0; //ì´ ì¡°ê±´ë¬¸ì„ ì¶”ê°€í•´ë‘ì§€ ì•Šìœ¼ë©´ num==1ì¼ ë•Œ 3ì´ returnëœë‹¤.
 
     int i; long n = num;
     for (i = 1; i < 501; i++)

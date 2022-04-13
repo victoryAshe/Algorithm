@@ -1,4 +1,4 @@
-// Å°ÆÐµå ´©¸£±â: https://programmers.co.kr/learn/courses/30/lessons/67256
+// í‚¤íŒ¨ë“œ ëˆ„ë¥´ê¸°: https://programmers.co.kr/learn/courses/30/lessons/67256
 // *->11,  0->11,  #->12 (...)
 #include <string>
 #include <vector>
