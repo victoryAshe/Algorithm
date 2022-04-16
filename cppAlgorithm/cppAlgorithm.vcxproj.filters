@@ -231,7 +231,7 @@
     <ClCompile Include="DataStructure_LinkedList02.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DataStructure_LinkedList03.cpp">
+    <ClCompile Include="DataStructure07_2017110060 강수연.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="DataStructure06_2017110060 강수연.cpp">

@@ -1,4 +1,4 @@
-// 22-1 자료구조 과제 04: 학생수와 성적을 입력받는 성적 계산 프로그램
+﻿// 22-1 자료구조 과제 04: 학생수와 성적을 입력받는 성적 계산 프로그램
 #include <iostream>
 using namespace std;
 int main()
