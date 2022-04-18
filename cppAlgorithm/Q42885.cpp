@@ -1,23 +1,22 @@
-// 탐욕법_구명보트: https://programmers.co.kr/learn/courses/30/lessons/42885
-// 아직 못 풀었음
+﻿// 탐욕법_구명보트: https://programmers.co.kr/learn/courses/30/lessons/42885
 #include <vector>
 #include <algorithm>
-#include <iostream>
 using namespace std;
 
 int solution(vector<int> people, int limit) {
-    int answer = 0, i, weight = 0;
+    int answer = 0, head = 0, tail = people.size() - 1;
     sort(people.begin(), people.end());
-    
-    for (i = 0; i < people.size(); i++)
+
+    while (head <= tail)
     {
-        weight += people[i];
-        if (weight + people[i + 1] >= limit)
+        if (people[head] + people[tail] <= limit)
         {
-            answer++;
-            weight = 0;
-            continue;
+            head++; tail--;
         }
+        else
+            tail--;
+
+        answer++;
     }
 
     return answer;
