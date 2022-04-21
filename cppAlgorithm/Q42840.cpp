@@ -1,4 +1,4 @@
-// 모의고사: https://programmers.co.kr/learn/courses/30/lessons/42840
+﻿// 모의고사: https://programmers.co.kr/learn/courses/30/lessons/42840
 // 배운 것: int they_max = *max_element(they.begin(),they.end());
 #include <vector>
 #include <algorithm>

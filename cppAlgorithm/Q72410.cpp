@@ -1,4 +1,4 @@
-// [2021 카카오] 신규 아이디 추천: https://programmers.co.kr/learn/courses/30/lessons/72410
+﻿// [2021 카카오] 신규 아이디 추천: https://programmers.co.kr/learn/courses/30/lessons/72410
 // 배운 것: [string 내 특정 chr 검사] strchr(string target, char find) https://blockdmask.tistory.com/389
 // 배운 것: |= 연산: 비트 OR 연산. ex) 'A'|= 32 -> 'a' (65|=32 = 97)
 // 배운 것: regex[^x] : x가 아닌 것. 

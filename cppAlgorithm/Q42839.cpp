@@ -1,42 +1,40 @@
-// 소수 찾기: https://programmers.co.kr/learn/courses/30/lessons/42839
+﻿// 소수 찾기: https://programmers.co.kr/learn/courses/30/lessons/42839
 // 아직 못 풀었음!
 #include <string>
-#include <string.h>
 #include <vector>
 #include <algorithm>
 #include <iostream>
 using namespace std;
 
-vector<int> added;
-void DFS(vector<char> ch, int n, int i, string x)
+vector<int> prime;
+
+void DFS(string& numbers, string number, int i, int len)
 {
-    if (i >= ch.size()) return;
-    if (n >= ch.size())
-    {
-        //return;
-        string s = ""; for (int j = 0; j < i + 1; j++) s += ch[j];
-        DFS(ch, 0, i + 1, s);
-    }
+    if (len >= number.size()) return;
 
-    x += ch[n];
-    cout << stoi(x) << " ";
-    if (find(added.begin(), added.end(), stoi(x)) == added.end())
-        added.push_back(stoi(x));
-    DFS(ch, n + 1, i, x);
+    number += numbers[i];
+    cout << number << " ";
 
+    int num = stoi(number);
+    int j;
+    for (j = 0; j < num / 2; j++) if (num % j == 0) break;
+    if (j < num / 2 && find(prime.begin(), prime.end(), num) != prime.end())
+        prime.push_back(num);
+
+    DFS(numbers, number, i, len + 1);
+    DFS(numbers, number, i - 1, len + 1);
 }
 
+
 int solution(string numbers) {
-    int answer = 0, i; vector<char> ch; 
-    for (i = 0; i < numbers.size(); i++) ch.push_back(numbers[i]);
-    DFS(ch, 0, 0, "");
 
-    for (int x : added)
-    {
-        if (x < 2) continue;
-        for (i = 2; i < x / 2; i++) if (x % i == 0) break;
-        if (i >= x / 2) answer++;
-    }
+    string number = "";
+    sort(numbers.begin(), numbers.end(), greater<char>());
+    if (numbers[0] == '0') return 0;
 
-    return answer;
+    DFS(numbers, number, 0, 0);
+    DFS(numbers, number, numbers.length() - 1, 0);
+
+    for (int i = 0; i < prime.size(); i++) cout << prime[i] << " ";
+    return prime.size();
 }

@@ -1,4 +1,4 @@
-// 최소직사각형: https://programmers.co.kr/learn/courses/30/lessons/86491
+﻿// 최소직사각형: https://programmers.co.kr/learn/courses/30/lessons/86491
 // Idea: 어차피 최댓값을 반환하는 것이기 때문에, 긴 부분을 무조건 가로로 정해 넓이의 최댓값을 구한다.
 #include <vector>
 #include <algorithm>

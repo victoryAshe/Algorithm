@@ -1,4 +1,4 @@
-// [2019 카카오] 실패율: https://programmers.co.kr/learn/courses/30/lessons/42889
+﻿// [2019 카카오] 실패율: https://programmers.co.kr/learn/courses/30/lessons/42889
 // 배운 것: pair, make_pair로 dictionary와 유사한 형태의 vector형을 만들 수 있다.
 // 아래와 같이 클래스를 새로 만들어서 compare해주면 코드는 더 길어지지만 pair를 비교하는 것보다 2배 빨리 처리된다.
 // 이 문제를 풀 때 주의할 점: 스테이지에 도달한 유저가 없는 경우 해당 스테이지의 실패율은 0으로 정의한다는 점.

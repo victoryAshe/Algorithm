@@ -1,4 +1,4 @@
-// 22-1 자료구조 과제 01: 성적 계산 프로그램
+﻿// 22-1 자료구조 과제 01: 성적 계산 프로그램
 #include <iostream>
 using namespace std;
 const int Student = 10, Sub = 1;

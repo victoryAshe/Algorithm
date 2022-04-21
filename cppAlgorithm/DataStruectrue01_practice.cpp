@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 #define ST_NUM 20				// C 스타일
 const int StudentNumber = 20;	// C++ 스타일

@@ -1,4 +1,4 @@
-// 최대공약수와 최소공배수: https://programmers.co.kr/learn/courses/30/lessons/12940
+﻿// 최대공약수와 최소공배수: https://programmers.co.kr/learn/courses/30/lessons/12940
 // 유클리드 호제법: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=kmc7468&logNo=221017936040
 #include <string>
 #include <vector>

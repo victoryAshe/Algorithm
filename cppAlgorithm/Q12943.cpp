@@ -1,4 +1,4 @@
-// 콜라스 추측: https://programmers.co.kr/learn/courses/30/lessons/12943?language=cpp
+﻿// 콜라스 추측: https://programmers.co.kr/learn/courses/30/lessons/12943?language=cpp
 using namespace std;
 
 int solution(int num) {

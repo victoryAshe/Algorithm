@@ -1,4 +1,4 @@
-// 22-1 자료구조 과제 03: 성적 평균 계산 프로그램
+﻿// 22-1 자료구조 과제 03: 성적 평균 계산 프로그램
 #include <iostream>
 #include <random>
 using namespace std;

@@ -1,4 +1,4 @@
-// 탐욕법_큰 수 만들기: https://programmers.co.kr/learn/courses/30/lessons/42883
+﻿// 탐욕법_큰 수 만들기: https://programmers.co.kr/learn/courses/30/lessons/42883
 #include <string>
 #include <vector>
 using namespace std;

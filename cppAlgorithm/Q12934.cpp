@@ -1,4 +1,4 @@
-// 정수 제곱근 판별: https://programmers.co.kr/learn/courses/30/lessons/12934?language=cpp
+﻿// 정수 제곱근 판별: https://programmers.co.kr/learn/courses/30/lessons/12934?language=cpp
 #include <cmath>
 using namespace std;
 
