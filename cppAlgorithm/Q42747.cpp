@@ -7,12 +7,11 @@ int solution(vector<int> citations) {
     int answer = 0, h, idx;
     sort(citations.begin(), citations.end());
 
-    int size = citations.size() - 1;
-    for (h = 0; h < citations[size]; h++)
+    for (h = 0; h < citations[citations.size() - 1]; h++)
     {
         idx = 0;
         for (int x : citations) if (x >= h) idx++;
-        if (idx >= h && h > answer) answer = h;
+        if (idx >= h) answer = h;
     }
 
     return answer;

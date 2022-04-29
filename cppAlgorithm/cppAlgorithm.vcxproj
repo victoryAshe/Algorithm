@@ -158,6 +158,7 @@
     <ClCompile Include="DataStructure06_2017110060 강수연.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="DataStructure08_2017110060 강수연.cpp" />
     <ClCompile Include="DataStructure_LinkedList02.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -168,6 +169,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="DataStructure_LinkedList05.cpp" />
+    <ClCompile Include="DataStructure_Stack01.cpp" />
     <ClCompile Include="DataStruectrue01_practice.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
