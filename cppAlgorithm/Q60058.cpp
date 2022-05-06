@@ -18,6 +18,7 @@ using namespace std;
 
 bool checkBracket(string s)
 {
+    if (s[0] == 41) return false;
     int i, p = 0, q = 0;
     for (i = 0; i < s.length(); i++)
     {
