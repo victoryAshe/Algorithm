@@ -7,7 +7,8 @@ int solution(vector<int> citations) {
     int answer = 0, h, idx;
     sort(citations.begin(), citations.end());
 
-    for (h = 0; h < citations[citations.size() - 1]; h++)
+    int max = citations[citations.size() - 1] / 2;
+    for (h = 0; h < max; h++)
     {
         idx = 0;
         for (int x : citations) if (x >= h) idx++;
