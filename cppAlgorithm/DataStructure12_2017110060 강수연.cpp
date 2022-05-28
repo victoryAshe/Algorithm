@@ -44,7 +44,7 @@ element deQueue()
 	{
 		item = front->data;
 		front = front->link;
-		if (front == NULL) rear == NULL;
+		if (front == NULL) rear = NULL;
 		return item;
 	}
 }

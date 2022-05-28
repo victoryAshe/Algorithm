@@ -339,5 +339,14 @@
     <ClCompile Include="DataStructure12_2017110060 강수연.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Queue_Ashe.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure13_2017110060 강수연.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure14_2017110060 강수연.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
