@@ -14,19 +14,19 @@ void init()
 
 bool is_Empty()
 {
-	return front == rear ? true : false;
+	return front == rear;
 }
 
 bool is_full()
 {
-	return front == (rear + 1) % MAX_Q_SIZE ? true : false;
+	return front == (rear + 1) % MAX_Q_SIZE;
 }
 
 void enQueue(element item)
 {
 	if (is_full())
 	{
-		cout << "Error: Queue overflow"<<endl;
+		cout << "Error: Queue overflow" << endl;
 	}
 	else
 	{
@@ -39,12 +39,14 @@ element deQueue()
 {
 	if (is_Empty())
 	{
-		cout << "Error: Queue underflow"<<endl;
+		cout << "Error: Queue underflow" << endl;
 	}
 	else
 	{
 		front = (front + 1) % MAX_Q_SIZE;
-		return cQueue[front];
+		int x =  cQueue[front];
+		cQueue[front] = NULL;
+		return x;
 	}
 }
 
@@ -67,7 +69,7 @@ void print()
 	}
 	
 	cout << "cQueue: ";
-	for (int p = front+1; p != (rear + 1) % MAX_Q_SIZE; p = (p + 1) % MAX_Q_SIZE)
+	for (int p = (front + 1) % MAX_Q_SIZE; p != (rear + 1) % MAX_Q_SIZE; p = (p + 1) % MAX_Q_SIZE)
 		cout << cQueue[p] << " ";
 	cout << endl;
 }
