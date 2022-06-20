@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 #include <functional>
+#include <iostream>
 using namespace std;
 
 /*
@@ -18,13 +19,31 @@ using namespace std;
 * 3. 오름차순 정렬하여 return: sort(answer.begin(), answer.end());
 */
 
-string makeComb(string order, int course, string comb)
+vector<string> makeComb(string menu, int num)
 {
-    string c = comb;
-    
+    vector<string> combs;
+    vector<char> arr;
+    int r = menu.length() - num;
+    if (r < 0) return combs;
 
-    return c;
-};
+    for (int i = 0; i < menu.length(); i++)
+        arr.push_back(menu[i]);
+    vector<bool> temp(arr.size(), true);
+
+    for (int i = 0; i < r; i++)
+        temp[i] = false;
+
+    do {
+        string comb = "";
+        for (int i = 0; i < arr.size(); ++i)
+        {
+            if (temp[i]) comb += arr[i];
+        }
+        combs.push_back(comb);
+    } while (next_permutation(temp.begin(), temp.end()));
+
+    return combs;
+}
 
 class Pair
 {
@@ -34,6 +53,7 @@ public:
     {
         comb = c; frequency = 1;
     }
+
 };
 
 struct isExist : public binary_function<Pair, string, bool>
@@ -45,7 +65,7 @@ public:
     }
 };
 
-bool compare(Pair& a, Pair& b)
+bool compareFreq(Pair& a, Pair& b)
 {
     return a.frequency > b.frequency;
 };
@@ -59,6 +79,15 @@ vector<string> solution(vector<string> orders, vector<int> course) {
         ordered = {};
         for (j = 0; j < orders.size(); j++)
         {
+            //sort(orders[j].begin(), orders[j].end());
+            vector<string> combs = makeComb(orders[j], course[i]);
+
+            for (int k = 0; k < combs.size(); k++)
+            {
+                cout << combs[k] << " ";
+            }
+            cout << endl;
+            /*
             int len = orders[j].length() - course[i] + 1;
             for (k = 0; k < len; k++)
             {
@@ -72,8 +101,11 @@ vector<string> solution(vector<string> orders, vector<int> course) {
                 }
 
             }
+            */
+
         }
-        sort(ordered.begin(), ordered.end(), compare);
+        /*
+        sort(ordered.begin(), ordered.end(), compareFreq);
         int max = ordered[0].frequency;
         if (max < 2) continue;
         for (j = 0; j < ordered.size(); j++)
@@ -81,6 +113,7 @@ vector<string> solution(vector<string> orders, vector<int> course) {
             if (ordered[j].frequency == max) answer.push_back(ordered[j].comb);
             else break;
         }
+        */
     }
     sort(answer.begin(), answer.end());
     return answer;
