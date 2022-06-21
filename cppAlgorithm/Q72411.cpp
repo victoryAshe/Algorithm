@@ -1,10 +1,8 @@
 ﻿// 2021 카카오_ 메뉴 리뉴얼: https://programmers.co.kr/learn/courses/30/lessons/72411
-// 아직 못품: 각 course[i]만큼 각 order에서 모든 조합의 수를 찾아서 해야하는데 어렵다~
 #include <string>
 #include <vector>
 #include <algorithm>
 #include <functional>
-#include <iostream>
 using namespace std;
 
 /*
@@ -12,7 +10,7 @@ using namespace std;
 * for(i = 0; i<course.size(); i++) for(j = 0; j< orders.size(); j++) 
        2번 이상 주문된 course[i]개수의 메뉴 조합을 모두 찾는다.
 * vector<Pair> ordered: 주문된 메뉴 course[i]개 조합 comb와 주문횟수 frequency의 배열
-* 1. 각 주문을 돌면서 course[i]만큼 order을 자른다X  -> string menu;
+* 1. 각 주문을 돌면서 Combination의 Vector를 만들어준다 -> MakeComb();
 *   1-1. 만약 ordered에 없으면: ordered.push_back(Pair(menu));
 *   1-2. 있으면: 해당 Pair를 찾아서 frequency++;
 * 2. ordered 에서 frequency가 가장 높은 Pair를 찾아 answer.push_back(comb); //여러 개일 수 있다
@@ -79,32 +77,19 @@ vector<string> solution(vector<string> orders, vector<int> course) {
         ordered = {};
         for (j = 0; j < orders.size(); j++)
         {
-            //sort(orders[j].begin(), orders[j].end());
+            sort(orders[j].begin(), orders[j].end());
             vector<string> combs = makeComb(orders[j], course[i]);
 
-            for (int k = 0; k < combs.size(); k++)
+            for (k = 0; k < combs.size(); k++)
             {
-                cout << combs[k] << " ";
-            }
-            cout << endl;
-            /*
-            int len = orders[j].length() - course[i] + 1;
-            for (k = 0; k < len; k++)
-            {
-                string menu = orders[j].substr(k, course[i]);
-                if (find_if(ordered.begin(), ordered.end(), bind2nd(isExist(), menu)) == ordered.end())
-                    ordered.push_back(Pair(menu));
+                int idx = find_if(ordered.begin(), ordered.end(), bind2nd(isExist(), combs[k])) - ordered.begin();
+                if (idx == ordered.size())
+                    ordered.push_back(Pair(combs[k]));
                 else
-                {
-                    int idx = find_if(ordered.begin(), ordered.end(), bind2nd(isExist(), menu)) - ordered.begin();
                     ordered[idx].frequency++;
-                }
-
             }
-            */
-
         }
-        /*
+        
         sort(ordered.begin(), ordered.end(), compareFreq);
         int max = ordered[0].frequency;
         if (max < 2) continue;
@@ -113,7 +98,7 @@ vector<string> solution(vector<string> orders, vector<int> course) {
             if (ordered[j].frequency == max) answer.push_back(ordered[j].comb);
             else break;
         }
-        */
+        
     }
     sort(answer.begin(), answer.end());
     return answer;
