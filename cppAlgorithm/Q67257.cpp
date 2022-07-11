@@ -6,45 +6,43 @@
 #include <iostream>
 using namespace std;
 
-int factorial(int n)
+/*
+* [Idea]
+* 중위 표기식 -> 후위표기식처럼 나누고,
+* operator 우선순위를 만든 뒤(permutation 리스트) 각각에 대하여 계산
+*/
+
+vector<int> nums;
+vector<char> operators;
+
+void getExp(string exp)
 {
-    if (n == 1) return 1;
-    return n * factorial(n - 1);
+    string num = "";
+    for (int i = 0; i < exp.length(); i++)
+    {
+        char ch = exp[i];
+        if (ch == '+' || ch == '-' || ch == '*')
+        {
+            operators.push_back(ch);
+            nums.push_back(stoi(num));
+            num = "";
+        }
+        else
+            num += ch;
+            
+    }
 }
+
 
 long long solution(string expression) {
     long long answer = 0;
-    vector<int> numbers;
-    vector<char> operators;
-    int i, j; string num = "";
-    for (i = 0; i < expression.length(); i++)
-    {
-        if (isdigit(expression[i]))
-            num += expression[i];
-        else
-        {
-            numbers.push_back(stoi(num));
-            num = "";
-            operators.push_back(expression[i]);
-        }
-    }
-    vector<char> uniqueO = operators;
-    sort(uniqueO.begin(), uniqueO.end());
-    uniqueO.erase(unique(uniqueO.begin(), uniqueO.end()), uniqueO.end());
-    int max = factorial(uniqueO.size());
 
-    /*
-    for (char x : uniqueO) cout << x << " ";
-    cout << endl;
-    */
-    for (i = 0; i < max; i++)
-    {
-        for (j = 0; j < operators.size(); j++)
-        {
+    getExp(expression);
+    int plus, sub, mul;
+    plus = count(operators.begin(), operators.end(), '+');
+    sub = count(operators.begin(), operators.end(), '-');
+    mul = count(operators.begin(), operators.end(), '*');
 
-        }
-    }
-    
 
 
     return answer;
